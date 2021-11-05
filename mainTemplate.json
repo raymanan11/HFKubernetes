@@ -888,7 +888,7 @@
           {
             "name": "deploy",
             "routingType": "Proxy",
-            "endpoint": "[concat('https://', reference(resourceId('Microsoft.Web/sites/', variables('funcName'))).hostNames[0], '/api/{requestPath}', '?code=', listSecrets(resourceId('Microsoft.Web/sites/functions',variables('funcName'),'HttpTrigger'), '2018-11-01').key)]"
+            "endpoint": "[concat('https://', reference(resourceId('Microsoft.Web/sites/', variables('funcName'))).hostNames[0], '/api/{requestPath}', '?code=', listSecrets(resourceId('Microsoft.Web/sites/functions',variables('funcName'),'HttpTrigger'), '2021-02-01').key)]"
           }
         ]
       }
